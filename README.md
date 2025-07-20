@@ -1,4 +1,6 @@
 <img width="1366" height="768" alt="Screenshot (69)" src="https://github.com/user-attachments/assets/64abc0bb-ec09-4e2a-9306-7f9b4317f3aa" />
+
+
 📄 Project: UltraEdit Website Clone
 This project is a responsive front-end clone of the official UltraEdit website, built using only HTML and CSS. It recreates the landing page design, including navigation, download section for multiple languages, newsletter subscription, and informational sections.
 
