@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Clone</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0;
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+
+
+        li {
+            list-style: none;
+            font-size: 15px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .img1 {
+            margin-left: 10px;
+
+
+        }
+
+        .img2 {
+            margin-top: 2px;
+            margin-right: 80px;
+            margin-left: 10px;
+        }
+
+        .img3 {
+            margin-right: 200px;
+            margin-top: -15px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 50px;
+            font-size: 48px;
+            font-weight: 400;
+            margin-top: 100px;
+            color: #222222;
+
+
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #222222;
+            /* margin-left: 150px;
+            margin-right: 150px; */
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .button button {
+            background-color: #00b6d1;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            min-height: 48px;
+            min-width: 256px;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .heading3 {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .heading3 h3 small {
+            font-size: 60%;
+            font-weight: normal;
+            color: #222222;
+        }
+
+        .heading3 h3 {
+            font-family: 'Segoe UI';
+            font-size: 24px;
+            font-weight: 400;
+            box-sizing: border-box;
+            color: #222222;
+            margin-left: 20px;
+            margin-top: -0px;
+
+        }
+
+
+        .heading3 img {
+            margin-left: 150px;
+            margin-top: -10px;
+        }
+
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+        .btn {
+            background-color: #5cb85ce0;
+            color: white;
+            padding: 8px 16px;
+            font-size: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .item-lang h3 {
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            margin: 0;
+        }
+
+
+        .item {
+            background-color: #f9f9f9;
+            padding: 23px;
+            margin-top: 25px;
+            font-size: 20px;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        .item h3 {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Segoe UI';
+            margin-top: -10px;
+        }
+
+        .item h4 {
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: 'Segoe UI';
+        }
+
+        .firstpara {
+            word-break: break-word;
+            font-size: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            line-height: 1rem;
+        }
+
+        .secondpara {
+            word-break: break-word;
+            font-size: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+            line-height: 1rem;
+        }
+
+
+        @media screen and (max-width: 1145px) {
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        .container{
+            margin-top: 60px;
+            background-color: #222222;
+            background-size: cover;
+            background-position: 50%;
+            height: 80vh;
+            width:100vw;
+            display: flex;
+
+            
+        }
+
+        .container2{
+            width: 490px;
+            height: 340px;
+            margin-top: 130px;
+            margin-left: 140px;
+        }
+
+.container2 h3{
+    color: #f9f9f9;
+    font-size: 25px;
+justify-content: center;   
+ padding: 24px; 
+}
+
+.container2 h3 p{
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.container3{
+    background-color: white;
+    width: 350px;
+    height: 255px;
+    margin-top: 70px;
+    margin-left: 90px;
+    border: 2px #222222;
+    border-radius: 12px;
+    
+}
+
+
+
+.container3 h3{
+    margin-top: 25px;
+    font-weight: 400 ;
+    color: #00b6d1;
+}
+
+.container3 p{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 5px;
+font-weight: 400;
+color: #222222;
+font-size: .9em;
+font-family: 'Segoe UI';
+}
+
+.container3 form{
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    height: 60px;
+    margin: 0px 40px 0px 40px;
+
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button2 button{
+    background-color: #00b6d1;
+            color: white;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            height: 40px;
+            width: 270px;
+            cursor: pointer;
+
+
+}
+
+.textdata{
+            background-color: #222222;
+            background-size: cover;
+            background-position: 50%;
+            height: 55vh;
+            width:100vw;
+            color: #f9f9f9;
+            margin-top: -40px;
+
+            
+        }
+
+        .textdata h3{
+            color: white;
+            text-align: left;
+            margin-left: 150px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+      
+        .textdata p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-left: 150px;
+font-size: 18px;        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="img3"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt=""
+                        width="170px"></li>
+                <li>Products ⌵</li>
+                <li>For business ⌵</li>
+                <li>Resources ⌵</li>
+                <li>Academic licensing ⌵</li>
+                <li>Our Company ⌵</li>
+                <li class="img1"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Language_icon.png?20201112103601"
+                        alt="" width="30px"></li>
+
+                <li class="img2"><img src="https://cdn-icons-png.flaticon.com/512/59/59762.png" alt="" width="20px">
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h2>Download <strong>UltraEdit</strong> for Windows <img
+                src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></h2>
+        <h3>Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of the
+            text
+            editor.</h3>
+    </div>
+    <div class="button">
+        <button>DOWNLOAD MAC OR LINUX VERSION</button>
+    </div>
+
+    <div class="heading3">
+        <img src="img11.png" width="90px" alt="">
+        <h3>Download UltraEdit&nbsp;<small>v2024.3 (released 2025-03-21) |
+                Hotfix information&nbsp;
+            </small></h3>
+    </div>
+
+    <main>
+        <section>
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                        <h4><small>English</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>Deutsch</h3>
+                        <h4><small>German</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>Italiano</h3>
+                        <h4><small>Italian</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>Español</h3>
+                        <h4><small>Spanish</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>français</h3>
+                        <h4><small>French</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>Português brasileiro</h3>
+                        <h4><small>Brazilian Portuguese</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CE<br>F8B20A85F9A
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>日本</h3>
+                        <h4><small>Japanese</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        A1B2C3D4E5F67890123456789ABCDEF0123456789ABCDEF0123456789ABCDEF
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>한국어</h3>
+                        <h4><small>Korean</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>华语</h3>
+                        <h4><small>Chinese</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        A1B2C3D4E5F67890123456789ABCDEF0123456789ABCDEF0123456789ABCDEF
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>華語</h3>
+                        <h4><small>Traditional Chinese</small></h4>
+                    </div>
+                    <button class="btn"><a href="/ue_english_64.exe">Download 64-bit</a></button>
+                    <p class="firstpara">SHA256</p>
+                    <p class="secondpara">
+                        A1B2C3D4E5F67890123456789ABCDEF0123456789ABCDEF0123456789ABCDEF
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+<section>
+<div class="container">
+
+<div class="container2">
+    <h3>
+        <b> Join the UltraEdit newsletter</b>
+        <br><p>Sign up for our newsletter and receive emails for the latest <br> news, blogs, and special deals on UltraEdit.</p>
+    </h3>
+</div>
+
+
+<div class="container3"><h3> Subscribe to our emails</h3>
+    <p>Enter email adress</p>
+<form>
+    <label for="text"></label><br>
+</form>
+<div class="button2"><button>SIGN UP</button></div>
+
+</div>
+</section>
+
+<section2>
+    <div class="textdata">
+        <h3>EXE or MSI?</h3><br>
+       <p> <small>The EXE builds of our products are the preferred download for most of our users, running Windows 10 and later. <br>
+        
+        We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). Get the UltraEdit MSI installer. <br></small></p>
+        
+        <h3>Free trial period</h3> <br>
+        <p><small> This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must purchase a license to <br> continue using it.</small></p>
+    </div>
+</section2>
+
+
+
+
+
+
+
+</body>
+
+</html>
